@@ -1,15 +1,25 @@
+<!--<template>-->
+<!--  <div id="app">-->
+<!--    <div id="nav">-->
+<!--      <router-link to="/">Home</router-link> |-->
+<!--      <router-link to="/about">About</router-link> |-->
+<!--      <router-link to="/profile">Profile</router-link> |-->
+<!--      <router-link to="/list">List</router-link>-->
+<!--    </div>-->
+<!--    <router-view/>-->
+<!--  </div>-->
+<!--</template>-->
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/profile">Profile</router-link> |
-      <router-link to="/list">List</router-link>
-    </div>
-    <router-view/>
-  </div>
-</template>
+  <v-toolbar class="onPrimary--text">
+    <v-toolbar-side-icon dark data-test-id="menu">
+      <v-icon color="onPrimary">menu</v-icon>
+    </v-toolbar-side-icon>
+    <v-toolbar-title>t</v-toolbar-title>
+    <v-spacer/>
+    <v-btn> asdf</v-btn>
 
+  </v-toolbar>
+</template>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

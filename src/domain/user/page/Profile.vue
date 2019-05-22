@@ -13,11 +13,6 @@
     export default {
         computed: {
             ...mapState(MODULE_NAME, ['name'])
-        },
-        watch: {
-            name(fuck) {
-                alert(fuck);
-            }
         }
     }
 </script>
