@@ -10,7 +10,7 @@
         <v-img :src="image" @click="gotoVue"/>
     </v-btn>
   </v-toolbar>
-  <v-content>
+  <v-content style="padding-top: 20px;">
     <router-view/>
   </v-content>
   </v-app>

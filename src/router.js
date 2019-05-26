@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import app from './App.vue'
+import home from './Home.vue'
 import user from './domain/user/router'
 
 Vue.use(Router);
@@ -13,7 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: app
+      component: home
     },
     ...user
   ]
