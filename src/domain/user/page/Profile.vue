@@ -21,11 +21,8 @@
     computed: {
       ...mapState(MODULE_NAME, ['name'])
     },
-
     methods: {
       changeName(){
-        console.warn(this.changeNameInput);
-        debugger;
         this.$store.commit(`${MODULE_NAME}/${CHANGE_NAME}`, this.changeNameInput);
       }
     }
