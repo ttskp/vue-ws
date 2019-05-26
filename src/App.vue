@@ -1,25 +1,36 @@
-<!--<template>-->
-<!--  <div id="app">-->
-<!--    <div id="nav">-->
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link> |-->
-<!--      <router-link to="/profile">Profile</router-link> |-->
-<!--      <router-link to="/list">List</router-link>-->
-<!--    </div>-->
-<!--    <router-view/>-->
-<!--  </div>-->
-<!--</template>-->
 <template>
-  <v-toolbar class="onPrimary--text">
-    <v-toolbar-side-icon dark data-test-id="menu">
-      <v-icon color="onPrimary">menu</v-icon>
+  <v-app>
+  <v-toolbar>
+    <v-toolbar-side-icon data-test-id="menu">
+      <v-icon>menu</v-icon>
     </v-toolbar-side-icon>
-    <v-toolbar-title>t</v-toolbar-title>
+    <v-toolbar-title>Title</v-toolbar-title>
     <v-spacer/>
-    <v-btn> asdf</v-btn>
-
+    <v-btn icon>
+        <v-img :src="image" @click="gotoVue"/>
+    </v-btn>
   </v-toolbar>
+  <v-content>
+    <router-view/>
+  </v-content>
+  </v-app>
 </template>
+<script>
+  export default {
+    data () {
+      return {
+        image: require('@/assets/logo.png')
+      }
+    },
+    methods: {
+      gotoVue(){
+        // this.$router.replace({name: 'profile'});
+       window.location = 'https://vuejs.org/';
+      }
+    }
+  }
+
+</script>
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
