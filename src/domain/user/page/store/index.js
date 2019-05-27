@@ -1,7 +1,7 @@
 export const MODULE_NAME = 'PROFILE';
 export const CHANGE_NAME = 'CHANGE_NAME';
 
-const initialState = () => {
+export const initialState = () => {
   return {
     name: 'myTestUser'
   };
