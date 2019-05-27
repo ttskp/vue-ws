@@ -6,8 +6,8 @@
     </v-toolbar-side-icon>
     <v-toolbar-title>Title</v-toolbar-title>
     <v-spacer/>
-    <v-btn icon>
-        <v-img :src="image" @click="gotoVue"/>
+    <v-btn @click="gotoCats">
+        cats
     </v-btn>
   </v-toolbar>
   <v-content style="padding-top: 20px;">
@@ -24,8 +24,11 @@
     },
     methods: {
       gotoVue(){
-        // this.$router.replace({name: 'profile'});
-       window.location = 'https://vuejs.org/';
+        this.$router.replace({name: 'profile'});
+       //window.location = 'https://vuejs.org/';
+      },
+      gotoCats(){
+        this.$router.replace({name: 'cats', params: {name: 'kitty'}});
       }
     }
   }
